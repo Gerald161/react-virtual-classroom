@@ -19,39 +19,7 @@ const ScheduleClass = () => {
     const scheduleButtonRef = useRef();
 
     async function updateStudents(startTimeMilliSeconds, endTimeMilliSeconds){
-        var myHeaders = new Headers();
-
-        myHeaders.append("Authorization", "key=AAAAGzWyGJA:APA91bEI_icowhzLRvVlFzLQNMGkm6LL_h7_J8a9AyXeXlL1NKO6qMHGYmkuC-BBTQU7sB6nBhktVxxho2yxKRtF3QnGW3_VnekHA3E2gHGVc-I0XXbcXfSGome9aH7zDYB5nYaSb_HG");
-
-        myHeaders.append("Content-Type", "application/json");
-    
-        var raw = JSON.stringify({
-          "to": "cN0UTiZDTvqkbpcB-Bd_Aw:APA91bFZa94KzQwQjzvfaffqYPo6H8pz7fauArXWHtS0I10vc1B9FWBOhG84ABUqcy0Bb6Fv6TltpSQyfOH6Bx6nyUD4QVlZbAoZaYuzBge-tKzGeMGfDxmsHCHYKykNOmU0CF2z0c6N",
-          "collapse_key": "type_a",
-          "data": {
-            "start": startTimeMilliSeconds,
-            "end": endTimeMilliSeconds
-          }
-        });
-    
-        var requestOptions = {
-          method: 'POST',
-          headers: myHeaders,
-          body: raw,
-          redirect: 'follow'
-        };
-    
-        fetch("https://fcm.googleapis.com/fcm/send", requestOptions)
-          .then(response => response.text())
-          .then(result => {
-                scheduleButtonRef.current.classList.remove("show_loader");
-
-                errorMessageRef.current.classList.remove("show_loader");
-
-                loadingRef.current.classList.add("show_loader");
-            }
-          )
-          .catch(error => console.log('error', error));
+        //use your own secret key
     }
 
     function updateTiming(){
