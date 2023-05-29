@@ -1,0 +1,55 @@
+import { Link } from "react-router-dom";
+import "../CssFiles/teacherquizpages.css";
+import { useEffect } from "react";
+import { faClock } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+const QuizesPage = () => {
+    useEffect(()=>{
+        document.title = "All Quizes set"
+    }, [])
+
+    return ( 
+        <div className="allQuizesList">
+            <p className="heading">All Quizes you have set</p>
+
+            <Link to="/editquiz/boy" className="studentquiz">
+                <p>1) What is a boy, and how is he important?</p>
+
+                <p>30 min <FontAwesomeIcon icon={faClock} /></p>
+            </Link>
+
+            <Link to="/editquiz/lifeorigin" className="studentquiz">
+                <p>2) What is the origin of life my guy, tell me I have to know.</p>
+
+                <p>25 min <FontAwesomeIcon icon={faClock} /></p>
+            </Link>
+
+            <Link to="/editquiz/thirdquestion" className="studentquiz">
+                <p>3) Third random question?</p>
+
+                <p>40 min <FontAwesomeIcon icon={faClock} /></p>
+            </Link>
+
+            <Link to="/editquiz/blah" className="studentquiz">
+                <p>4) Blah blah blah very important blah blah</p>
+
+                <p>20 min <FontAwesomeIcon icon={faClock} /></p>
+            </Link>
+
+            <Link to="/editquiz/bored" className="studentquiz">
+                <p>5) All the interesting mangas have been completed</p>
+
+                <p>1hr: 30mins <FontAwesomeIcon icon={faClock} /></p>
+            </Link>
+
+            <Link to="/editquiz/cute" className="studentquiz">
+                <p>6) Dogs are very cute, that is a fact.</p>
+
+                <p>45 min <FontAwesomeIcon icon={faClock} /></p>
+            </Link>
+        </div>
+    );
+}
+ 
+export default QuizesPage;

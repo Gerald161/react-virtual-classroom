@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+.mainClassRoomSection{
+	display: flex;
+	gap: 10px;
+}
+
+.mainClassRoomSection .mainVideoCallingSection{
+	flex: 3;
+	margin: 10px 0;
+	gap: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.mainClassRoomSection .mainVideoCallingSection .teacherVideoSection{
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+.mainClassRoomSection .mainVideoCallingSection .teacherVideoSection .teacherVideo{
+	height: 150px;
+	width: 200px;
+	background: black;
+	position: relative;
+	transition: all 0.5s;
+}
+
+.mainClassRoomSection .mainVideoCallingSection .teacherVideoSection .screenShareVideo{
+	height: 250px;
+	width: 400px;
+	background: black;
+	position: relative;
+	transition: all 0.5s;
+}
+
+.mainClassRoomSection .mainVideoCallingSection .teacherVideoSection .screenCastContainer{
+	position: relative;
+	width: 30px;
+	cursor: pointer;
+	height: 30px;
+}
+
+.mainClassRoomSection .mainVideoCallingSection .teacherVideoSection svg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.mainClassRoomSection .mainVideoCallingSection .teacherVideoSection .screenShareVideo video,
+.mainClassRoomSection .mainVideoCallingSection .teacherVideoSection .teacherVideo video,
+.mainClassRoomSection .mainVideoCallingSection .teacherVideoSection .enlargenTeacherVideo video{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.mainClassRoomSection .mainVideoCallingSection .studentVideoSection{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.mainClassRoomSection .mainVideoCallingSection .studentVideoSection .studentsJoinedVideoSection{
+	display: grid;
+	grid-gap: 5px;
+	min-width: 40vw;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-auto-rows: 250px;
+}
+
+.mainClassRoomSection .mainVideoCallingSection .studentVideoSection .studentsJoinedVideoSection .studentVideo{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mainClassRoomSection .mainVideoCallingSection .studentVideoSection .studentsJoinedVideoSection .studentVideo .studentVideoContainer{
+	flex: 5;
+	background: black;
+	position: relative;
+}
+
+.mainClassRoomSection .mainVideoCallingSection .studentVideoSection .studentsJoinedVideoSection .studentVideo .studentVideoContainer video{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.mainClassRoomSection .mainVideoCallingSection .studentVideoSection .studentsJoinedVideoSection .studentVideo h3{
+	flex: 1;
+	text-align: center;
+}
+
+/*questions part*/
+.mainClassRoomSection .questionSection{
+	flex: 1;
+	/*max-width: 600px;*/
+	max-height: 83vh;
+	margin: 30px auto;
+	border: 1px solid #ddd;
+	box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
+	border-radius: 2px;
+}
+
+.mainClassRoomSection .questionSection h2{
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #575ed8;
+}
+
+.message_content_section{
+	display: flex;
+	height: 78vh;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+#chat-window{
+    flex: 9;
+    overflow: auto;
+    background: #f9f9f9;
+}
+
+#output p{
+    padding: 14px 0px;
+    margin: 0 20px;
+    border-bottom: 1px solid #e9e9e9;
+    color: #555;
+}
+
+#output strong{
+    color: #575ed8;
+	text-transform: capitalize;
+}
+
+.message_compose_section{
+	flex: 1;
+}
+
+.messageForm{
+	all: unset;
+}
+
+.message_compose_section input{
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #eee;
+    border: 0;
+    display: block;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    font-family: "Nunito";
+    font-size: 16px;
+}
+
+#send{
+    background: #575ed8;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    cursor: pointer;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 0 0 2px 2px;
+}

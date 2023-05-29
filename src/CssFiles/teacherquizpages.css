@@ -1,0 +1,171 @@
+.allQuizesList{
+    margin: 3vw 5vw 7vw 5vw;
+	min-height: 50vh;
+}
+
+.allQuizesList .heading{
+    font-size: 1.4em;
+    margin: 15px 0;
+    text-align: center;
+}
+
+/* student section */
+.allQuizesList .studentquiz{
+	display: flex;
+	justify-content: space-between;
+}
+
+.allQuizesList a{
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 20px;
+    color: black;
+    transition: all 0.15s;
+}
+
+.allQuizesList a:hover{
+    color: dodgerblue;
+}
+
+/* QuizEditPage */
+.mainDraftPage{
+	margin: 1.5vw 10vw;
+	display: flex;
+	min-height: 50vh;
+}
+
+.mainDraftPage .questionContainer{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 20px;
+}
+
+.mainDraftPage .questionContainer .question{
+	display: flex;
+	gap: 10px;
+	justify-content: space-between;
+	transition: all 0.5s;
+	border-left: 5px solid #ddd;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.mainDraftPage .questionContainer .question:hover{
+	border-color: #9361bf;
+}
+
+.mainDraftPage .questionContainer .question p{
+	margin-left: 10px;
+}
+
+.mainDraftPage .questionContainer .question .questionEditOptions{
+	display: flex;
+	gap: 20px;
+}
+
+.mainDraftPage .questionContainer .question .questionEditOptions .fa-pencil{
+	color: green;
+}
+
+.mainDraftPage .questionContainer .question .questionEditOptions .fa-circle-xmark{
+	color: red;
+}
+
+/* Edit Form Styling */
+.quizAddContainer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 50vh;
+	min-width: 80vw;
+	margin: 5vh;
+}
+
+.quizAddContainer form{
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+}
+
+.quizAddContainer form input{
+	font-size: 1em;
+	margin: 0;
+	outline: none;
+}
+
+.quizAddContainer form input:focus{
+	border: black 2px solid;
+}
+
+.quizAddContainer form button{
+	cursor: pointer;
+}
+
+.quizAddContainer form p{
+	margin: 2vh;
+}
+
+.quizAddContainer form .answerOptionsContainer .answerOption, .quizAddContainer form .question{
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	margin: 10px 0;
+}
+
+.quizAddContainer form .question input{
+	width: 100%;
+}
+
+.quizAddContainer form .possibleAnswersContainer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.quizAddContainer form .possibleAnswersContainer select{
+	margin: 0;
+	padding: 5px;
+	cursor: pointer;
+	border: 2px solid #ccc;
+	font-size: 1em;
+}
+
+.quizAddContainer form .possibleAnswersContainer select:focus{
+	border: black 2px solid;
+}
+
+.quizAddContainer form button{
+	padding: 5px 10px;
+	align-self: center;
+}
+
+/* studentquiz place */
+.allStudentsQuestionsList{
+    margin: 3vw 5vw 7vw 5vw;
+	min-height: 50vh;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.allStudentsQuestionsList .studentQuizQuestionContainer{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.allStudentsQuestionsList .studentQuizQuestionContainer .studentQuestionOptions{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.allStudentsQuestionsList .studentQuizQuestionContainer .studentQuestionOptions label{
+	cursor: pointer;
+}
+
+.allStudentsQuestionsList .studentQuizQuestionContainer .studentQuestionOptions input{
+	margin-right: 10px;
+	cursor: pointer;
+}

@@ -1,0 +1,19 @@
+.mainSchedulePage{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    min-height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainSchedulePage button{
+    cursor: pointer;
+    margin: 1vh;
+    padding: 5px 15px;
+}
+
+.schedule_error_message{
+    color: orangered;
+    margin: 1vh;
+}

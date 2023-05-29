@@ -1,0 +1,58 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    margin: 20px 10px;
+}
+
+main .joinOptions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+main .joinOptionsContainer{
+    display: grid;
+    grid-gap: 10px;
+    min-width: 50vw;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-auto-rows: 150px;
+}
+
+main .joinOptionsContainer a{
+    flex: 1;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 3px solid #009579;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    gap: 25px;
+    font-weight: bold;
+}
+
+main .joinOptions a{
+    text-decoration: none;
+    border-radius: 5px;
+    border: 3px solid #009579;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    gap: 25px;
+    font-weight: bold;
+}
+  
+main .joinOptionsContainer a svg, main .joinOptions a svg{
+    font-size: 3em;
+}
+
+main .joinOptionsContainer a p, main .joinOptions a p{
+    text-align: center;
+}

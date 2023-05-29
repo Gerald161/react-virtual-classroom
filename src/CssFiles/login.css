@@ -1,0 +1,134 @@
+h1{
+    font-weight: normal;
+    margin: 20px auto;
+    text-align: center;
+}
+
+form{
+    width: 500px;
+    margin: 20px auto;
+}
+
+form input{
+    display: block;
+    padding: 8px 16px;
+    font-size: 1.2em;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    outline: none !important;
+}
+
+/* validation styles */
+
+form input.valid{
+    border-color: green;
+}
+
+form input.invalid{
+    border-color: orange;
+}
+
+form input + p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 30px;
+    color: orange;
+    opacity: 0;
+    height: 0;
+    transition: all 0.6s;
+    margin-bottom: 10px;
+}
+
+form input.invalid + p{
+    opacity: 1;
+    height: auto;
+}
+
+.submissionError{
+    color: orangered;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.login_section{
+  display: flex;
+  min-height: 68vh;
+}
+
+.login_section .first_section{
+  flex: 1;
+  background: url(2.jpg) no-repeat;
+  background-size: cover;
+}
+
+.login_section .teachSection{
+    flex: 1;
+    background: url(4.jpg) no-repeat; 
+    background-size: cover;
+}
+
+.login_section .studentSection{
+    flex: 1;
+    background: url(1.jpg) no-repeat; 
+    background-size: cover;
+}
+
+.login_section .second_section{
+  flex: 1;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#signup_button, #submitButton{
+    background: transparent;
+    padding: 7px 17px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #03a9f4;
+    cursor: pointer;
+    transition: background 0.5s;
+    z-index: 10000000;
+}
+
+.show_hide_pass{
+    cursor: pointer;
+    z-index: 100000;
+    position: absolute;
+    right: 30px;
+    top: 25px;
+}
+
+.loading{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}   
+
+/*first color here #009579*/
+
+.loading::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 5px solid #dddddd;
+    border-top-color: #009579;
+    border-radius: 50%;
+    animation: loading 1s linear infinite;
+}
+
+@keyframes loading{
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.show_loader{
+    display: none;
+}

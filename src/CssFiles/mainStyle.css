@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	padding: 1.5em 2.3em;
+}
+
+.site-logo {
+  font-weight: 900;
+  font-size: 0.8rem;
+  color: black;
+  text-decoration: none;
+}
+
+.nav__link--btn {
+  text-decoration: none;
+  border-radius: 2em;
+  margin-left: 1em;
+  transition: background 250ms ease-in-out;
+  letter-spacing: 1px;
+  padding: 0.75em 1.5em;
+  color: #333;
+}
+
+.nav__link--btn:hover {
+  background: black;
+  color: white;
+  border-color: var(--text);
+}
+
+footer{
+  background: #333;
+  display: flex;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.social_media{
+  display: flex;
+  flex-direction: column;
+}
+
+.social_media i{
+  color: white;
+  margin: 20px;
+  font-size: 1.2em;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.social_media i:hover{
+  color: dodgerblue;
+}
+
+.foot{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foot p{
+  padding: 7px 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.foot h2{
+  color: #fff;
+}
+
+.foot input{
+  position: relative;
+  max-width: 200px;
+}
+
+.foot a{
+  color: white;
+  margin: 20px 0;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.foot a:hover{
+  color: dodgerblue;
+}
+
+@media(max-width: 700px){
+    nav{
+        padding: 2em 10px;
+    }
+
+    .login_section .first_section{
+        display: none;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+}
